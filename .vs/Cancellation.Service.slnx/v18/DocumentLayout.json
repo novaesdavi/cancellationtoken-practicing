@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|c:\\users\\dnova\\source\\cancellationtoken-practicing\\cancellation.service.api\\processcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|solutionrelative:cancellation.service.api\\processcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|c:\\users\\dnova\\source\\cancellationtoken-practicing\\cancellation.service.api\\iprocessusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|solutionrelative:cancellation.service.api\\iprocessusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|c:\\users\\dnova\\source\\cancellationtoken-practicing\\cancellation.service.api\\processusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|solutionrelative:cancellation.service.api\\processusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|c:\\users\\dnova\\source\\cancellationtoken-practicing\\cancellation.service.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C2B080B-E2DE-8F3F-0327-B7A9F7261AC3}|Cancellation.Service.Api\\Cancellation.Service.Api.csproj|solutionrelative:cancellation.service.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,17 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProcessUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\IProcessUseCase.cs",
+              "RelativeDocumentMoniker": "Cancellation.Service.Api\\IProcessUseCase.cs",
+              "ToolTip": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\IProcessUseCase.cs",
+              "RelativeToolTip": "Cancellation.Service.Api\\IProcessUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T01:36:11.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProcessUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\ProcessUseCase.cs",
+              "RelativeDocumentMoniker": "Cancellation.Service.Api\\ProcessUseCase.cs",
+              "ToolTip": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\ProcessUseCase.cs",
+              "RelativeToolTip": "Cancellation.Service.Api\\ProcessUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T01:36:02.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProcessController.cs",
+              "DocumentMoniker": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\ProcessController.cs",
+              "RelativeDocumentMoniker": "Cancellation.Service.Api\\ProcessController.cs",
+              "ToolTip": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\ProcessController.cs",
+              "RelativeToolTip": "Cancellation.Service.Api\\ProcessController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T01:34:19.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\Program.cs",
               "RelativeDocumentMoniker": "Cancellation.Service.Api\\Program.cs",
               "ToolTip": "C:\\Users\\dnova\\source\\cancellationtoken-practicing\\Cancellation.Service.Api\\Program.cs",
               "RelativeToolTip": "Cancellation.Service.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T03:46:14.908Z",
               "EditorCaption": ""

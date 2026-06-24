@@ -19,7 +19,7 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/weatherforecast", async (CancellationToken cancellationToken)  => 
 {
     var forecast =  Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
@@ -29,7 +29,27 @@ app.MapGet("/weatherforecast", () =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
-    return forecast;
+
+    try
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            if (cancellationToken.IsCancellationRequested)
+            {
+                Console.WriteLine("Process was cancelled.");
+                return Results.Json(new { Message = "Process was cancelled." }, statusCode: 499);
+            }
+            await Task.Delay(1000, cancellationToken); // Simulate work
+        }
+    }
+    catch (OperationCanceledException)
+    {
+        Console.WriteLine("Process was cancelled.");
+        return Results.Json(new { Message = "Process was cancelled." }, statusCode: 499);
+    }
+
+    Console.WriteLine(forecast);
+    return Results.Json(forecast);
 })
 .WithName("GetWeatherForecast");
 
