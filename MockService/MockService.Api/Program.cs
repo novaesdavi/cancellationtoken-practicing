@@ -19,9 +19,9 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/weatherforecast", async (CancellationToken cancellationToken)  => 
+app.MapGet("/weatherforecast", async (CancellationToken cancellationToken) =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -36,15 +36,21 @@ app.MapGet("/weatherforecast", async (CancellationToken cancellationToken)  =>
         {
             if (cancellationToken.IsCancellationRequested)
             {
-                Console.WriteLine("Process was cancelled.");
-                return Results.Json(new { Message = "Process was cancelled." }, statusCode: 499);
+                Console.WriteLine("Process was cancelled in the for loop");
+
             }
-            await Task.Delay(1000, cancellationToken); // Simulate work
+            ///OR 
+            ///
+            //Mesma exceção se for o Task.Delay
+            cancellationToken.ThrowIfCancellationRequested();
+
+            await Task.Delay(1000); // Simulate work
+            //await Task.Delay(1000, cancellationToken); // Simulate work
         }
     }
     catch (OperationCanceledException)
     {
-        Console.WriteLine("Process was cancelled.");
+        Console.WriteLine("Process was cancelled in the catch block.");
         return Results.Json(new { Message = "Process was cancelled." }, statusCode: 499);
     }
 

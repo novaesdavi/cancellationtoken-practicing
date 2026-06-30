@@ -1,5 +1,6 @@
 using Cancellation.Service.Api.Application;
 using Cancellation.Service.Api.Infrastructure;
+using Cancellation.Service.Api.Middleware;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Refit;
 
@@ -15,19 +16,18 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IProcessUseCase, ProcessUseCase>();
 builder.Services.AddScoped<IRepositoryMock, RepositoryMock>();
 
-
 builder.Services
     .AddRefitClient<IMockApi>()
-    .ConfigureHttpClient(c => c.BaseAddress = new Uri("http://localhost:5096"));
+    .ConfigureHttpClient(c => 
+    {
+        c.BaseAddress = new Uri("http://localhost:5096");
+        c.Timeout = TimeSpan.FromSeconds(5); // Set timeout at HttpClient level
+    });
 
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
